@@ -1,12 +1,6 @@
-ehoo "hi"
-git clone https://github.com/Phenala/DOSScript
-ls
-clear
-cd
-clear
-ls DOSScript
-clear
-cd DOSScript
+pkg install python
+pkg install php
+pkg install python2
 clear
 echo " _____   _   _   _____   _____   _____  "
 echo "/  ___| | | | | /  _  \ /  ___/ |_   _| "
@@ -28,9 +22,15 @@ echo -e $red"1》DDOS
 read -p "======> " select
 
 if [ $select -eq 1 ]; then
+git clone https://github.com/Phenala/DOSScript
+ls
 clear
-figlet DDOS-ATTAC
-#apt-get install python
+cd
+clear
+ls DOSScript
+clear
+cd DOSScript
+chmod +x *
 python 'DOS Attack.py'
 cd ..
 fi
@@ -38,20 +38,10 @@ if [ $select -eq 2 ]; then
 clear
 git clone https://github.com/Tuhinshubhra/RED_HAWK
 clear
-ls
-clear
-cd
-clear
 ls RED_HAWK
 clear
 cd RED_HAWK
-clear
 chmod +x *
-clear
-#apt-get install php
-pkg install php
-y
-clear
 php rhawk.php
 cd ..
 fi
@@ -89,7 +79,9 @@ git clone https://github.com/TheSpeedX/TBomb
 clear
 ls TBomb
 clear
-cd TBomb                                                                                                                                     chmod +x *
+cd TBomb
+clear
+chmod +x *
 bash TBomb.sh
 cd ..
 fi
