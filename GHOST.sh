@@ -1,3 +1,4 @@
+pkg install git
 pkg install python
 pkg install php
 pkg install python2
@@ -9,7 +10,6 @@ echo "| |  _  |  _  | | | | | \___  \   | |   "
 echo "| |_| | | | | | | |_| |  ___| |   | |   "
 echo "\_____/ |_| |_| \_____/ /_____/   |_|   "
 echo "coded by obaida :)"
-echo "https://www.facebook.com/mbvh8"
 echo "《》《》《》《》《》《》《》《》"
 echo -e $e""
 echo -e $red"1》DDOS
@@ -22,16 +22,15 @@ echo -e $red"1》DDOS
 read -p "======> " select
 
 if [ $select -eq 1 ]; then
-git clone https://github.com/Phenala/DOSScript
-ls
+git clone https://github.com/11224hvubbbbs67/the-lion
 clear
-cd
+ls the-lion
 clear
-ls DOSScript
+cd the-lion
 clear
-cd DOSScript
 chmod +x *
-python 'DOS Attack.py'
+clear
+python2 Lion-ddos.py
 cd ..
 fi
 if [ $select -eq 2 ]; then
