@@ -17,6 +17,8 @@ echo -e $red"1》DDOS
 3》metasploit(may take long time)...
 4》OSIF
 5》bomber
+6》guardn
+7》IRSSI
 "
 
 read -p "======> " select
@@ -82,5 +84,31 @@ cd TBomb
 clear
 chmod +x *
 bash TBomb.sh
+cd ..
+fi
+if [ $select -eq 6 ]; then
+clear
+git clone https://github.com/Noxturnix/guardn
+clear
+ls guardn
+clear
+cd guardn
+clear
+chmod +x *
+clear
+python guardn.py
+cd ..
+fi
+if [ $select -eq 7 ]; then
+clear
+echo "IRSSI is a global chat and these are some commands to start chatting"
+echo "1》 /connect irc.freenode.net"
+echo "2》 /nick (set your nickname in chat)"
+echo "3》 /join #freenode"
+
+echo "                           wait 7 sec. "
+sleep 7
+pkg install irssi
+irssi                                                                                                                                        cd ..
 cd ..
 fi
