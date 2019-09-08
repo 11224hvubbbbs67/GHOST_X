@@ -19,6 +19,7 @@ echo -e $red"1》DDOS
 5》bomber
 6》guardn
 7》IRSSI
+8》beef(for kali/parrot)
 "
 
 read -p "======> " select
@@ -110,5 +111,17 @@ echo "                           wait 7 sec. "
 sleep 7
 pkg install irssi
 irssi                                                                                                                                        cd ..
+cd ..
+fi
+if [ $select -eq 8 ]; then
+clear
+git clone https://github.com/beefproject/beef
+clear
+ls beef
+clear
+cd beef
+chmod +x *
+./install
+./beef
 cd ..
 fi
